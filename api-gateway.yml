@@ -1,0 +1,19 @@
+spring:
+  application:
+     name: API-GATEWAY
+  cloud:
+    gateway:
+      discovery.locator:
+        enabled: true
+        lowerCaseServiceId: true
+      routes:
+       - id: GREET-API-1
+         uri: lb://GREET-API-1
+         predicates:
+          - Path= /greet
+       - id: WELCOME-API-1
+         uri: lb://WELCOME-API-1
+         predicates:
+          - Path= /welcome
+server:
+   port: 1000
