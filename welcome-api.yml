@@ -1,0 +1,17 @@
+spring:
+  application:
+      name: WELCOME-API-1
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111
+
+server:
+  port: 8001
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
