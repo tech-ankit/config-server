@@ -5,10 +5,7 @@ spring:
     admin:
       client:
         url: http://localhost:1111
-
-server:
-  port: 9000
-
+msg: Hi i am from Greet Api
 
 
 management:
