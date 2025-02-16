@@ -1,6 +1,4 @@
 spring:
-  application:
-      name: GREET-API-1
   boot:
     admin:
       client:
